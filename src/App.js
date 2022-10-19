@@ -1,23 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import Album from './Album'
+
+import "./fonts/Director-bold.ttf"
+
+// import albumData from './data.json'
+import data from './data.json'
+
+console.log(data)
+
+
+
+
+const albums = data 
+
+albums.forEach((x, i) => console.log(x));
+
+
+
+const readAlbums = (album) => (<Album 
+      artistName={album.artists[0].name}
+      albumName={album.name}
+      albumArtwork={album.images[1].url}
+      rating={album.rating}
+      />)
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {albums.map((album) => readAlbums(album))}
     </div>
   );
 }

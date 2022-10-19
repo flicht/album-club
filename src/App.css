@@ -13,6 +13,18 @@
   }
 }
 
+@font-face {
+  font-family: "Bold";   /*Can be any text*/
+  src: local("DirectorBold"),
+    url("./fonts/Director-bold.ttf") format("truetype");
+} 
+
+@font-face {
+  font-family: "ft88italic";   /*Can be any text*/
+  src: local("Ft-88-Italic"),
+    url("./fonts/FT88-Italic.ttf") format("truetype");
+} 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +47,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+p {
+  font-family: "ft88italic";
+  font-size: 20px;
 }
