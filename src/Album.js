@@ -6,6 +6,7 @@ function Album(props) {
         <p>{props.artistName}</p>
         <p>{props.albumName}</p>
         <img src={props.albumArtwork} />
+        <p>Suggested by: {props.suggestedBy}</p>
         <p>Rating: {props.rating}</p>
         <hr />
     </div>

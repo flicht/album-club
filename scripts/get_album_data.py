@@ -6,12 +6,13 @@ import json
 from pathlib import Path
 
 
-def get_album_ids(filepath):
+def get_album_data(filepath):
     with open (filepath) as album_picks:
         album_data = json.load(album_picks)
-        album_ids = [i['albumId'] for i in album_data['albums']]
+        album_data = album_data["albums"]
+        # album_ids = [i['albumId'] for i in album_data['albums']]
     
-    return album_ids
+    return album_data
 
 def main():
 
@@ -44,18 +45,18 @@ def main():
 
     Path('../src/album-data').mkdir(exist_ok=True)
 
-    album_ids = get_album_ids('albumData.json')
+    album_ref_data = get_album_data('albumData.json')
 
     all_data = []
 
-    for album_id in album_ids:
-        r = requests.get(BASE_URL + 'albums/' + album_id, headers=headers)
-        all_data.append(r.json())
+    for album in album_ref_data:
+        r = requests.get(BASE_URL + 'albums/' + album["albumId"], headers=headers)
+        album_data = r.json()
+        album_data['suggestedBy'] = album["suggestedBy"]
+        all_data.append(album_data)
 
     with open(f'../src/data.json', 'w+') as f:
         json.dump(all_data, f)
-
-
 
 
 if __name__ == "__main__":

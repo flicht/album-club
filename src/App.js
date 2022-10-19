@@ -23,6 +23,7 @@ const readAlbums = (album) => (<Album
       albumName={album.name}
       albumArtwork={album.images[1].url}
       rating={album.rating}
+      suggestedBy={album.suggestedBy}
       />)
 
 function App() {
