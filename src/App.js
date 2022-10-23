@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Album from './Album'
+import Header from './Header'
 
 import "./fonts/Director-bold.ttf"
 
@@ -29,6 +30,7 @@ const readAlbums = (album) => (<Album
 function App() {
   return (
     <div className="App">
+      <Header />
       {albums.map((album) => readAlbums(album))}
     </div>
   );
