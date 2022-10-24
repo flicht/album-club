@@ -52,6 +52,7 @@ def main():
         r = requests.get(BASE_URL + 'albums/' + album["albumId"], headers=headers)
         album_data = r.json()
         album_data['suggestedBy'] = album["suggestedBy"]
+        album_data['rating'] = album["rating"]
         all_data.append(album_data)
 
     with open(f'./src/data.json', 'w+') as f:
