@@ -5,7 +5,7 @@ function Album(props) {
     <div className="App">
         <p>{props.artistName}</p>
         <p>{props.albumName}</p>
-        <img src={props.albumArtwork} />
+        <img src={props.albumArtwork} alt={props.albumName}/>
         <p>Suggested by: {props.suggestedBy}</p>
         <p>Rating: {props.rating}</p>
         <hr />

@@ -9,7 +9,7 @@ function Header() {
   // const colours = ['darkkhaki', 'darksalmon', 'crimson', 'darkslategrey', 'olive', 'pink', 'tomato']
 
   const cycleTitleColours = (titleColour) => {
-    let newColours = colours.filter(x => x != titleColour);
+    let newColours = colours.filter(x => x !== titleColour);
     let newColour = newColours[Math.floor(Math.random()*newColours.length)];
     setTitleColour(newColour)
   }
