@@ -43,7 +43,6 @@ def main():
 
     album_id = '4i2Cb9v7g9ieShCgf1gakk'
 
-    Path('../src/album-data').mkdir(exist_ok=True)
 
     album_ref_data = get_album_data('albumData.json')
 
@@ -55,7 +54,7 @@ def main():
         album_data['suggestedBy'] = album["suggestedBy"]
         all_data.append(album_data)
 
-    with open(f'../src/data.json', 'w+') as f:
+    with open(f'./src/data.json', 'w+') as f:
         json.dump(all_data, f)
 
 

@@ -16,10 +16,8 @@ const albums = data
 
 albums.forEach((x, i) => console.log(x));
 
-
-
 const readAlbums = (album) => (<Album 
-      artistName={album.artists[0].name}
+      artistName={album.artists}
       albumName={album.name}
       albumArtwork={album.images[1].url}
       rating={album.rating}
