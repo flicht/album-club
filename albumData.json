@@ -3,17 +3,20 @@
         {
             "albumId": "4i2Cb9v7g9ieShCgf1gakk",
             "suggestedBy": "Priya",
-            "rating": "10.0"
+            "rating": "10.0",
+            "order": 1
         },
         {
             "albumId": "1QSo9HgowUqAc5BI3AdkqN",
             "suggestedBy": "Freddie" ,
-            "rating": "12.5"
+            "rating": "12.5",
+            "order": 2
         },
         {
             "albumId": "5QUUFZbFPmalY8vI3kMQJL",
             "suggestedBy": "George" ,
-            "rating": "TBC"
+            "rating": "TBC",
+            "order": 3
         }
     ]
 }

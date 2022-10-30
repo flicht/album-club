@@ -12,13 +12,13 @@ console.log(data)
 
 
 
-const albums = data 
+const albums = data.sort((x,y) => y.order - x.order)
 
-albums.forEach((x, i) => console.log(x));
-
-const readAlbums = (album) => (<Album 
+const readAlbums = (album, index) => (<Album
+      index={index}
       artistName={album.artists}
       albumName={album.name}
+      url={album.external_urls.spotify}
       albumArtwork={album.images[1].url}
       rating={album.rating}
       suggestedBy={album.suggestedBy}
@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {albums.map((album) => readAlbums(album))}
+      {albums.map((album, index) => readAlbums(album, index))}
     </div>
   );
 }
