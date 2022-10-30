@@ -16,8 +16,8 @@ function Album(props) {
   let firstStyles = {}
   
   if (props.index === 0) {
-    currentPick = <h1><span style={{"font-family": "Bold", "color": "black", "letter-spacing": "10px", "text-decoration": "underline"}}>Current pick</span></h1>
-    firstStyles = {"background-color": 'white', 'width': "50%", "margin": "auto", "border": "2px solid black"}
+    currentPick = <h2><span style={{"font-family": "Bold", "color": "black", "letter-spacing": "10px", "border-bottom": "2px solid black"}}>Current Pick</span></h2>
+    firstStyles = {"background-color": 'white', "margin": "10px", "border": "2px solid black"}
     firstPick = true
   }
 
@@ -36,7 +36,7 @@ function Album(props) {
         <p>Suggested by: {props.suggestedBy}</p>
         <p>Rating: <span style={{"background-color": "DarkKhaki"}}>
           {props.rating}</span></p>
-        { !firstPick && <hr /> } 
+        { !firstPick && <hr /> }
       </div>
     </div>
   );
