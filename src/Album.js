@@ -17,14 +17,18 @@ function Album(props) {
   
   if (props.index === 0) {
     currentPick = <h2><span style={{"font-family": "Bold", "color": "black", "letter-spacing": "10px", "border-bottom": "2px solid black"}}>Current Pick</span></h2>
-    firstStyles = {"background-color": 'white', "margin": "10px", "border": "2px solid black"}
+    firstStyles = {"background-color": 'white', "margin": "auto", "padding": "10px", "border": "2px solid black", "max-width": '700px'}
     firstPick = true
+  }
+  
+  if (props.index === 1) {
+    currentPick = <h2><span style={{"font-family": "Bold", "color": "black", "letter-spacing": "10px", "border-bottom": "2px solid black"}}>Previous Picks</span></h2>
   }
 
 
   return (
     <div className="App" >
-      <div style={firstStyles}>
+      <div className="album" style={firstStyles}>
       {
         currentPick
       }

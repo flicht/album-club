@@ -68,5 +68,11 @@ hr {
   border-style: solid;
   margin: 1em auto ;
   padding: auto;
-  width: 50%;
+  width: 80%;
+}
+
+@media only screen and (max-width: 710px) {
+  .album {
+    margin: 10px !important
+  }
 }
