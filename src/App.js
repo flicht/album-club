@@ -1,16 +1,8 @@
 import './App.css';
 import Album from './Album'
 import Header from './Header'
-
 import "./fonts/Director-bold.ttf"
-
-// import albumData from './data.json'
 import data from './data.json'
-
-console.log(data)
-
-
-
 
 const albums = data.sort((x,y) => y.order - x.order)
 
