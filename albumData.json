@@ -15,8 +15,14 @@
         {
             "albumId": "5QUUFZbFPmalY8vI3kMQJL",
             "suggestedBy": "George" ,
-            "rating": "TBC",
+            "rating": "11.5",
             "order": 3
+        },
+        {
+            "albumId": "4HQ3nCTGppPWp3xn05HiUL",
+            "suggestedBy": "Hattie" ,
+            "rating": "TBC",
+            "order": 4
         }
     ]
 }
