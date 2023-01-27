@@ -1,6 +1,6 @@
 In the project directory, you can run:
 
-### `python src/get_album_data.py`
+### `python scripts/get_album_data.py`
 
 Generates `src/data.json` from `albumData.json` to populate the site.
 

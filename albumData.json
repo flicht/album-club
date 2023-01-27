@@ -21,8 +21,14 @@
         {
             "albumId": "4HQ3nCTGppPWp3xn05HiUL",
             "suggestedBy": "Hattie" ,
-            "rating": "TBC",
+            "rating": "13",
             "order": 4
+        },
+        {
+            "albumId": "0e5GuQaryu1bLZL9Gk3hS8",
+            "suggestedBy": "Tom" ,
+            "rating": "TBC",
+            "order": 5
         }
     ]
 }
