@@ -21,14 +21,20 @@
         {
             "albumId": "4HQ3nCTGppPWp3xn05HiUL",
             "suggestedBy": "Hattie" ,
-            "rating": "13",
+            "rating": "14",
             "order": 4
         },
         {
             "albumId": "0e5GuQaryu1bLZL9Gk3hS8",
             "suggestedBy": "Tom" ,
-            "rating": "TBC",
+            "rating": "12.6",
             "order": 5
+        },
+        {
+            "albumId": "49kzgMsxHU5CTeb2XmFHjo",
+            "suggestedBy": "George" ,
+            "rating": "TBC",
+            "order": 6
         }
     ]
 }
