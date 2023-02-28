@@ -36,7 +36,8 @@ jobs:
           CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
       run: |
         python scripts/get_album_data.py
-    - name: commit files
+    - uses: actions/checkout@v3
+    - name: commit & push files
       run: |
         git config --local user.email fred@fredlich.com
         git config --local user.name actions
