@@ -31,6 +31,8 @@ def main():
 
     # convert the response to JSON
     auth_response_data = auth_response.json()
+    print(auth_response_data)
+    
 
     # save the access token
     access_token = auth_response_data['access_token']
