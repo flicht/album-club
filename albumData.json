@@ -33,6 +33,12 @@
         {
             "albumId": "49kzgMsxHU5CTeb2XmFHjo",
             "suggestedBy": "George" ,
+            "rating": "12.0",
+            "order": 6
+        },
+        {
+            "albumId": "3hNl1XdEEpBSgwEVISFnTt",
+            "suggestedBy": "Freddie" ,
             "rating": "TBC",
             "order": 6
         }
