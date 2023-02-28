@@ -17,8 +17,8 @@ def main():
 
     load_dotenv()
     BASE_URL = "https://api.spotify.com/v1/"
-    CLIENT_ID = os.environ.get("CLIENT_ID")
-    CLIENT_SECRET = os.environ.get("CLIENT_SECRET")
+    CLIENT_ID = os.environ["CLIENT_ID"]
+    CLIENT_SECRET = os.environ["CLIENT_SECRET"]
 
     AUTH_URL = 'https://accounts.spotify.com/api/token'
 
