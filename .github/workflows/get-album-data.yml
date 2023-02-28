@@ -41,9 +41,6 @@ jobs:
         git config --local user.email "lichtensteinf@gmail.com"
         git config --local user.name "Freddie Lichtenstein"
         git add -A
-        git commit -m "update album data" -a
-    - name: push changes
-      uses: ad-m/github-push-action@master
-      with:
-        branch: main  
+        git commit -am "update album data"
+        git push
         
