@@ -43,9 +43,11 @@ def main():
 
 
     album_id = '4i2Cb9v7g9ieShCgf1gakk'
+    
+    HOME = "/home/runner/work/album-club/album-club/"
 
 
-    album_ref_data = get_album_data('albumData.json')
+    album_ref_data = get_album_data(f'{HOME}albumData.json')
 
     all_data = []
 
@@ -57,7 +59,7 @@ def main():
         album_data['order'] = album["order"]
         all_data.append(album_data)
 
-    with open(f'./src/data.json', 'w+') as f:
+    with open(f'{HOME}/src/data.json', 'w+') as f:
         json.dump(all_data, f)
 
 
