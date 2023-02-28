@@ -42,5 +42,9 @@ jobs:
         git config --local user.name "Freddie Lichtenstein"
         git add -A
         git commit -m "update album data" -a
-      
+    - name: push changes
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main  
         
