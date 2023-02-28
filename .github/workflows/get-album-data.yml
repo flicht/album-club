@@ -35,7 +35,12 @@ jobs:
           CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
       run: |
-        
         python scripts/get_album_data.py
+    - name: commit files
+      run: |
+        git config --local user.email "lichtensteinf@gmail.com"
+        git config --local user.name "Freddie Lichtenstein"
+        git add -A
+        git commit -m "update album data" -a
       
         
