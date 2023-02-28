@@ -38,8 +38,8 @@ jobs:
         python scripts/get_album_data.py
     - name: commit files
       run: |
-        git config --local user.email "lichtensteinf@gmail.com"
-        git config --local user.name "flicht"
+        git config --local user.email fred@fredlich.com
+        git config --local user.name actions
         git add -A
         git commit -am "update album data"
         git push
