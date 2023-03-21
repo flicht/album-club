@@ -41,6 +41,12 @@
             "suggestedBy": "Freddie" ,
             "rating": "14.6",
             "order": 7
+        },
+        {
+            "albumId": "2fexyU9sHdXHmI1jvPqrxX",
+            "suggestedBy": "Priya" ,
+            "rating": "TBC",
+            "order": 8
         }
     ]
 }

@@ -6,6 +6,8 @@ Generates `src/data.json` from `albumData.json` to populate the site.
 
 Put your spotify credentials in `.env`
 
+This happens every ime you make a commit with github actions
+
 ### `yarn start`
 
 Runs the app in the development mode.\
