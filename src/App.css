@@ -92,3 +92,120 @@ hr {
   margin: 1em auto ;
   max-width: 700px;
 }
+.ratingLink, .breakdownHint a, .backLink {
+  color: black;
+}
+
+.ratingLink {
+  text-decoration: none;
+  border-bottom: 2px dotted black;
+}
+
+.breakdownHint {
+  font-size: 1em;
+  margin: 0.2em auto;
+}
+
+.breakdown {
+  margin: 1em auto;
+}
+
+.breakdownCard {
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px;
+  margin: auto;
+  max-width: 700px;
+}
+
+.headlineScore {
+  font-size: 2.4em;
+  margin: 0.2em auto;
+}
+
+.scoreCaption {
+  font-size: 1em;
+  max-width: 40em;
+  margin: 0.4em auto;
+}
+
+.scoreNote {
+  font-size: 1.1em;
+  max-width: 40em;
+  margin: 1em auto 0.4em;
+}
+
+.scoreTable {
+  border-collapse: collapse;
+  margin: 1em auto;
+  font-family: "ft88italic";
+  font-size: 1.1em;
+}
+
+.scoreTable th, .scoreTable td {
+  border: 1px solid black;
+  padding: 0.25em 0.5em;
+  text-align: center;
+}
+
+.scoreTable thead th, .scoreTable tfoot th, .scoreTable tbody th {
+  background-color: DarkKhaki;
+}
+
+.scoreTable tbody th, .scoreTable tfoot th {
+  text-align: left;
+}
+
+.scoreTable .averageCell {
+  font-family: "Bold";
+  background-color: cyan;
+}
+
+/* The grid gets wide with a full turnout, so let it scroll on a phone
+   rather than squashing the rest of the page. */
+.scoreTableScroller {
+  overflow-x: auto;
+}
+
+/* Keep the category names and the averages in view while the marks in
+   between are scrolled past. */
+.scoreTable tbody th, .scoreTable tfoot th, .scoreTable thead th:first-child {
+  position: sticky;
+  left: 0;
+}
+
+.scoreTable .averageCell {
+  position: sticky;
+  right: 0;
+}
+
+.scrollHint {
+  display: none;
+}
+
+@media only screen and (max-width: 710px) {
+  .breakdown {
+    margin: 10px !important;
+  }
+
+  .scoreTable {
+    font-size: 0.9em;
+  }
+
+  .scoreTable th, .scoreTable td {
+    padding: 0.2em 0.3em;
+  }
+
+  .scoreTable tbody th, .scoreTable tfoot th, .scoreTable thead th:first-child {
+    /* "Uniqueability" is one long word and would otherwise spill out over
+       the marks scrolling underneath the pinned column. Pin the width as
+       well as breaking the word, or the column collapses to one letter. */
+    min-width: 7em;
+    max-width: 7em;
+    overflow-wrap: anywhere;
+  }
+
+  .scrollHint {
+    display: block;
+  }
+}
