@@ -57,6 +57,7 @@ def main():
         album_data['suggestedBy'] = album["suggestedBy"]
         album_data['rating'] = album["rating"]
         album_data['order'] = album["order"]
+        album_data['scores'] = album.get("scores")
         all_data.append(album_data)
 
     with open(f'{HOME}/src/data.json', 'w+') as f:
