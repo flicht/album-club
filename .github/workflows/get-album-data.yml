@@ -36,11 +36,20 @@ jobs:
           CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
       run: |
         python scripts/get_album_data.py
+    # Only main gets the regenerated data committed back. On a pull request
+    # the checkout is a detached HEAD of the merge ref, so there is no branch
+    # to push to — the step above still runs, which is what checks that the
+    # album ids in albumData.json are ones spotify knows about.
     - name: commit & push files
+      if: github.event_name == 'push'
       run: |
         git config --local user.email fred@fredlich.com
         git config --local user.name flicht
         git add -A
-        git commit -am "update album data"
-        git push
+        if git diff --staged --quiet; then
+          echo "No album data changes to commit"
+        else
+          git commit -m "update album data"
+          git push
+        fi
         

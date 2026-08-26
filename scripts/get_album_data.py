@@ -53,6 +53,10 @@ def main():
 
     for album in album_ref_data:
         r = requests.get(BASE_URL + 'albums/' + album["albumId"], headers=headers)
+        # A mistyped album id comes back as a 404 with an error body, which
+        # would otherwise get written into data.json as a card with no name
+        # and no artwork. Fail the run instead.
+        r.raise_for_status()
         album_data = r.json()
         album_data['suggestedBy'] = album["suggestedBy"]
         album_data['rating'] = album["rating"]
