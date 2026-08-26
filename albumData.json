@@ -8,82 +8,420 @@
         },
         {
             "albumId": "1QSo9HgowUqAc5BI3AdkqN",
-            "suggestedBy": "Freddie" ,
+            "suggestedBy": "Freddie",
             "rating": "12.5",
             "order": 2
         },
         {
             "albumId": "5QUUFZbFPmalY8vI3kMQJL",
-            "suggestedBy": "George" ,
+            "suggestedBy": "George",
             "rating": "11.5",
             "order": 3
         },
         {
             "albumId": "4HQ3nCTGppPWp3xn05HiUL",
-            "suggestedBy": "Hattie" ,
+            "suggestedBy": "Hattie",
             "rating": "14.0",
             "order": 4
         },
         {
             "albumId": "0e5GuQaryu1bLZL9Gk3hS8",
-            "suggestedBy": "Tom" ,
+            "suggestedBy": "Tom",
             "rating": "12.6",
             "order": 5
         },
         {
             "albumId": "49kzgMsxHU5CTeb2XmFHjo",
-            "suggestedBy": "George" ,
+            "suggestedBy": "George",
             "rating": "12.0",
             "order": 6
         },
         {
             "albumId": "3hNl1XdEEpBSgwEVISFnTt",
-            "suggestedBy": "Freddie" ,
+            "suggestedBy": "Freddie",
             "rating": "14.6",
             "order": 7
         },
         {
             "albumId": "2fexyU9sHdXHmI1jvPqrxX",
-            "suggestedBy": "Priya" ,
+            "suggestedBy": "Priya",
             "rating": "TBC",
             "order": 8
         },
-              {
+        {
             "albumId": "7DZeLXvr9eTVpyI1OlqtcS",
-            "suggestedBy": "Hattie" ,
+            "suggestedBy": "Hattie",
             "rating": "15.4",
             "order": 9
-        }
-        ,
+        },
         {
             "albumId": "2v6ANhWhZBUKkg6pJJBs3B",
-            "suggestedBy": "Tom" ,
+            "suggestedBy": "Tom",
             "rating": "TBC",
             "order": 10
         },
         {
             "albumId": "5STbVtgFy6y7uPshY1RRqb",
             "suggestedBy": "George",
-            "rating": "TBC",
-            "order": 11
+            "rating": "13.1",
+            "order": 11,
+            "scores": {
+                "wildCard": "Livability",
+                "raters": [
+                    "G",
+                    "Lu",
+                    "Kie",
+                    "F",
+                    "H",
+                    "M",
+                    "H",
+                    "A"
+                ],
+                "categories": [
+                    {
+                        "name": "Longevity",
+                        "scores": [
+                            3,
+                            3,
+                            4,
+                            3,
+                            3,
+                            3,
+                            4,
+                            3
+                        ]
+                    },
+                    {
+                        "name": "Uniqueability",
+                        "scores": [
+                            3,
+                            2,
+                            2,
+                            3,
+                            4,
+                            4,
+                            2,
+                            2
+                        ]
+                    },
+                    {
+                        "name": "Feelability",
+                        "scores": [
+                            3,
+                            4,
+                            1,
+                            2,
+                            0,
+                            2,
+                            2,
+                            2
+                        ]
+                    },
+                    {
+                        "name": "Album Journey",
+                        "scores": [
+                            2,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            3,
+                            1
+                        ]
+                    },
+                    {
+                        "name": "Wild Card",
+                        "scores": [
+                            4,
+                            2,
+                            2,
+                            4,
+                            4,
+                            2,
+                            4,
+                            3
+                        ]
+                    }
+                ]
+            }
         },
         {
             "albumId": "6IHVvvsmON11EVJACe8i3E",
             "suggestedBy": "Hattie",
-            "rating": "TBC",
-            "order": 12
+            "rating": "13.5",
+            "order": 12,
+            "scores": {
+                "scoredOn": "2026-07-09",
+                "wildCard": "Lightbulbility (makes you think)",
+                "raters": null,
+                "categories": [
+                    {
+                        "name": "Longevity",
+                        "scores": [
+                            2,
+                            4,
+                            2,
+                            4,
+                            4,
+                            4,
+                            4,
+                            5
+                        ]
+                    },
+                    {
+                        "name": "Uniqueability",
+                        "scores": [
+                            1,
+                            1,
+                            4,
+                            2,
+                            2,
+                            2,
+                            2,
+                            2
+                        ]
+                    },
+                    {
+                        "name": "Feelability",
+                        "scores": [
+                            3,
+                            3,
+                            3,
+                            3,
+                            3,
+                            3,
+                            4,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Album Journey",
+                        "scores": [
+                            2,
+                            1,
+                            3,
+                            3,
+                            3,
+                            2,
+                            3,
+                            3
+                        ]
+                    },
+                    {
+                        "name": "Wild Card",
+                        "scores": [
+                            1,
+                            1,
+                            2,
+                            2,
+                            2,
+                            2,
+                            3,
+                            4
+                        ]
+                    }
+                ]
+            }
         },
         {
             "albumId": "0nhxoQOhijxQPzPBv6OK9V",
             "suggestedBy": "Freddie",
-            "rating": "TBC",
-            "order": 13
+            "rating": "17.5",
+            "order": 13,
+            "scores": {
+                "scoredOn": "2026-07-29",
+                "wildCard": "Entropy / Surpriseability",
+                "raters": [
+                    "Freddie",
+                    "Avery",
+                    "Rosa",
+                    "Callum",
+                    "Kiersten",
+                    "George",
+                    "Hattie",
+                    "Hannah",
+                    "Jess",
+                    "Miles"
+                ],
+                "categories": [
+                    {
+                        "name": "Longevity",
+                        "scores": [
+                            3,
+                            3,
+                            4,
+                            2,
+                            1,
+                            2,
+                            2,
+                            4,
+                            4,
+                            2
+                        ]
+                    },
+                    {
+                        "name": "Uniqueability",
+                        "scores": [
+                            4,
+                            4,
+                            4,
+                            4,
+                            4,
+                            3,
+                            2,
+                            4,
+                            4,
+                            3
+                        ]
+                    },
+                    {
+                        "name": "Feelability",
+                        "scores": [
+                            4,
+                            3,
+                            5,
+                            5,
+                            5,
+                            3,
+                            3,
+                            3,
+                            3,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Album Journey",
+                        "scores": [
+                            4,
+                            5,
+                            3,
+                            2,
+                            4,
+                            2,
+                            1,
+                            5,
+                            4,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Wild Card",
+                        "scores": [
+                            5,
+                            4,
+                            3,
+                            4,
+                            5,
+                            4,
+                            2,
+                            5,
+                            4,
+                            4
+                        ]
+                    }
+                ]
+            }
         },
         {
             "albumId": "0ixwdleroFAl7fWqYZaSsA",
             "suggestedBy": "Callum",
+            "rating": "14.9",
+            "order": 14,
+            "scores": {
+                "scoredOn": "2026-08-13",
+                "wildCard": "Likability / Bangerability",
+                "raters": [
+                    "K",
+                    "A",
+                    "Fr",
+                    "M",
+                    "J",
+                    "H",
+                    "Fj",
+                    "G",
+                    "C"
+                ],
+                "note": "Callum listened to this album when at uni. Very enjoyable when high. 'Something' when watched live.",
+                "categories": [
+                    {
+                        "name": "Longevity",
+                        "scores": [
+                            2,
+                            2,
+                            3,
+                            2,
+                            3,
+                            3,
+                            3,
+                            3,
+                            2
+                        ]
+                    },
+                    {
+                        "name": "Uniqueability",
+                        "scores": [
+                            3,
+                            3,
+                            3,
+                            3,
+                            3,
+                            2,
+                            3,
+                            4,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Feelability",
+                        "scores": [
+                            3,
+                            4,
+                            3,
+                            2,
+                            4,
+                            1,
+                            2,
+                            4,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "Album Journey",
+                        "scores": [
+                            5,
+                            1,
+                            4,
+                            4,
+                            4,
+                            3,
+                            1,
+                            4,
+                            5
+                        ]
+                    },
+                    {
+                        "name": "Wild Card",
+                        "scores": [
+                            4,
+                            2,
+                            3,
+                            2,
+                            2,
+                            2,
+                            2,
+                            4,
+                            4
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "albumId": "20BKSOzIQSHI4kLQIzPslN",
+            "suggestedBy": "Finn",
             "rating": "TBC",
-            "order": 14
+            "order": 15
         }
     ]
 }

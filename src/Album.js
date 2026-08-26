@@ -38,6 +38,10 @@ function Album(props) {
     );
   }
 
+  const rating = (
+    <span style={{ "background-color": "DarkKhaki" }}>{props.rating}</span>
+  );
+
   return (
     <div className="App">
       <div className="album" style={firstStyles}>
@@ -50,10 +54,23 @@ function Album(props) {
         <p>Suggested by: {props.suggestedBy}</p>
         <p>
           Rating:
-          <span style={{ "background-color": "DarkKhaki" }}>
-            {props.rating}
-          </span>
+          {props.breakdownUrl ? (
+            <a
+              className="ratingLink"
+              href={props.breakdownUrl}
+              title={`See how ${props.albumName} was scored`}
+            >
+              {rating}
+            </a>
+          ) : (
+            rating
+          )}
         </p>
+        {props.breakdownUrl && (
+          <p className="breakdownHint">
+            <a href={props.breakdownUrl}>See the full breakdown</a>
+          </p>
+        )}
         {!firstPick && <hr />}
       </div>
     </div>
