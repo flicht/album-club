@@ -183,6 +183,19 @@ hr {
   display: none;
 }
 
+.scoreSheet {
+  margin: 1.5em 0 0;
+}
+
+.scoreSheet img {
+  max-width: 100%;
+  border: 1px solid black;
+}
+
+.scoreSheet figcaption {
+  margin-top: 0.4em;
+}
+
 @media only screen and (max-width: 710px) {
   .breakdown {
     margin: 10px !important;

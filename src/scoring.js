@@ -41,3 +41,7 @@ export const round = (n, places = 2) => {
 };
 
 export const albumPath = (album) => `#/album/${album.id}`;
+
+// Photos of the scoring sheets live in public/scores/, so the data only
+// carries the file name.
+export const sheetUrl = (sheet) => `${process.env.PUBLIC_URL}/scores/${sheet}`;

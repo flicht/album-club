@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import Breakdown from './Breakdown';
 import data from './data.json';
 
 const scoredAlbum = data.find((album) => album.scores);
@@ -32,4 +33,14 @@ test('shows the breakdown when the hash points at an album', () => {
       : new RegExp(`^${category.name}$`, 'i');
     expect(screen.getByText(label)).toBeInTheDocument();
   });
+});
+
+test('shows the scoring sheet photo when the data points at one', () => {
+  const album = {
+    ...scoredAlbum,
+    scores: { ...scoredAlbum.scores, sheet: '2026-08-13-soulwax.jpg' },
+  };
+  render(<Breakdown album={album} />);
+  const sheet = screen.getByAltText(/scoring sheet filled in for/i);
+  expect(sheet.getAttribute('src')).toMatch(/\/scores\/2026-08-13-soulwax\.jpg$/);
 });
