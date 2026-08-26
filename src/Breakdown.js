@@ -6,6 +6,7 @@ import {
   categoryLabel,
   raterLabels,
   round,
+  sheetUrl,
 } from "./scoring";
 
 function formatDate(isoDate) {
@@ -111,6 +112,21 @@ function Breakdown(props) {
 
         {scores.note && (
           <p className="scoreNote">&ldquo;{scores.note}&rdquo;</p>
+        )}
+
+        {scores.sheet && (
+          <figure className="scoreSheet">
+            <a href={sheetUrl(scores.sheet)}>
+              <img
+                src={sheetUrl(scores.sheet)}
+                alt={`The scoring sheet filled in for ${album.name}`}
+              />
+            </a>
+            <figcaption className="scoreCaption">
+              The sheet the marks above were read off. Open it to check the
+              transcription.
+            </figcaption>
+          </figure>
         )}
       </div>
     </div>
